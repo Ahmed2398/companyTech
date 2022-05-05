@@ -1,0 +1,8 @@
+
+.single-open-job{
+    background-color: var(--bs-first-color-macber) !important;
+}
+.single-open-job i {
+    color: #fff;
+}
+

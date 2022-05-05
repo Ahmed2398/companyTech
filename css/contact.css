@@ -1,0 +1,57 @@
+.custom-shadow {
+    -webkit-box-shadow: 0 5px 20px 0 rgb(210 210 245 / 50%);
+    box-shadow: 0 5px 20px 0 rgb(210 210 245 / 50%);
+}
+.contact-us-promo i{
+    font-size: 5rem;
+    color: var(--bs-first-color-macber);
+    margin-bottom: 1rem;
+}
+
+
+.form-control:focus, .custom-select:focus {
+    color: var(--bs-dark);
+    background-color: var(--bs-white);
+    border-color: var(--bs-first-color-macber);
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/* END  */
+
+/* Start Login Style Page */
+.login{
+ background-color: #ddd;
+} 
+.form-signin {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+  }
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: 1rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  input{
+    margin: 1rem 0 !important;
+  }

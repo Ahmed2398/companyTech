@@ -1,0 +1,172 @@
+/* **********************Home Page************************** */
+
+/* features section*/
+.features {
+    background-color: #F8F9FA;
+    padding-bottom: 7rem;
+}
+
+.two-cards {
+    animation: animate__fadeInTopLeft;
+    animation-duration: 2ms;
+}
+
+.h-100 {
+    height: 120% !important;
+}
+
+.cta-img {
+    width: 35%;
+    padding-top: 2rem;
+}
+.list-two-col li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 12px;
+}
+/* End Section */
+
+/* Testimonial Section */
+.testimonial{
+    padding: 3rem;
+    
+}
+.testimonial .nav-link{
+    border-color: rgba(101, 101, 101, 0.06) !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    margin: 0 1rem;
+}
+
+.testimonial .tab-pane {
+    padding: 2rem 0;
+}
+.testimonial .tab-pane h3{
+    color: #fff;
+}
+
+.testimonial p{
+    color: #fff !important;
+}
+
+.rounded-custom {
+    border-radius: 1rem !important;
+}
+/* End Section */
+
+/* Process Section */
+
+.process-icon-2{
+
+    position: relative;
+    width: 25%;
+    height: 25%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 22px;
+    transition: all 1.3s ease-in-out;
+    margin-right: 10px;
+}
+
+.process-icon-2:after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    width: 0;
+    right: 47%;
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    height: 150px;
+    z-index: -1;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: var(--bs-secondary-dark);
+    background-color: transparent;
+}
+.process-icon-2 .fa-solid:hover{
+    color: var(--bs-second-color-macber);
+    transform: scale(1.5) !important;
+}
+.icon-content .h6:hover{
+    color: var(--bs-first-color-macber) !important;
+    cursor: pointer;
+}
+
+
+.icon-box i {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+}
+/* End Section */
+
+/*  Pricing Section */
+.package-names{
+    color: var(--bs-first-color-macber) !important;
+}
+.list-price-def .fa-circle{
+    color: var(--bs-first-color-macber) !important;
+}
+/* End Section */
+
+/* FAQ Section */
+.faq{
+    padding: 5rem 0;
+    background-color:#F8F9FA ;
+}
+
+.connected-app-single {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.rounded-custom {
+    border-radius: 1rem !important;
+}
+.border-light {
+    border-color: rgba(101, 101, 101, 0.1) !important;
+}
+/* End Section */
+
+/* INTEGRATION Section */
+.integration-badge {
+    top: 8%;
+    right: 8%;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    font-family: var(--bs-font-monospace);
+}
+.connected-app-single:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+    -webkit-box-shadow: 0 20px 20px 0 rgb(2 19 79 / 9%);
+    box-shadow: 0 20px 20px 0 rgb(2 19 79 / 9%);
+    background: var(--bs-white) !important;
+}
+
+.text-body{
+    font-size: 1.2rem;
+}
+/* END Section */
+
+/* STart Banner Free  */
+.circle-shape-1 {
+    color: red;
+    top: -240px;
+    width: 356px;
+    min-height: 356px;
+    min-width: 356px;
+}
+
+.circle-shape-3 {
+    bottom: -210px;
+    width: 300px;
+    min-height: 300px;
+    min-width: 300px;
+}
+/* End Section */
+
+

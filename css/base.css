@@ -1,0 +1,1396 @@
+/*======================
+01. ROOT CSS
+=======================*/
+/* line 25, src/assets/scss/custom/_style.scss */
+:root {
+    --bs-primary-soft: #ceddff;
+    --bs-primary-light: #3a75ff;
+    --bs-primary: #175cff;
+    --bs-primary-dark: #0048f0;
+    --bs-secondary-light: #dcdcdf;
+    --bs-secondary: #c0c0c5;
+    --bs-secondary-dark: #d6d5e1;
+    --bs-success-soft: #def4ed;
+    --bs-success-light: #82d6bc;
+    --bs-success: #5cc9a7;
+    --bs-success-dark: #3cb690;
+    --bs-info-soft: #dcf0ff;
+    --bs-info-light: #83cbff;
+    --bs-info: #50b5ff;
+    --bs-info-dark: #1d9fff;
+    --bs-warning-soft: #fff2d8;
+    --bs-warning-light: #ffcf70;
+    --bs-warning: #ffb116;
+    --bs-warning-dark: #fba700;
+    --bs-danger-soft: #fcdde1;
+    --bs-danger-light: #f68692;
+    --bs-danger: #f25767;
+    --bs-danger-dark: #ee283c;
+    --bs-purple: #442772;
+    --bs-dark-soft: #c9c7f7;
+    --bs-dark-light: #071c4d;
+    --bs-dark: #0b163f;
+    --bs-dark-dark: #010e2b;
+    --body-color: #575757;
+    --bs-light: #f7f9fc;
+    --bs-white:#fff;
+    --bs-second-color-macber:#fad62c;
+    --bs-second-color-soft: #ffcf70;
+    --bs-second-color-dark: #ffb116;
+    --bs-first-color-macber: #442772;
+    --bs-font-sans-serif: 'Open Sans', sans-serif;
+    --bs-font-monospace: 'Poppins', sans-serif;
+    --bs-font-comfortaa::myPremiumFont;
+  }
+  
+  /* line 68, src/assets/scss/custom/_style.scss */
+  body {
+    color: var(--body-color);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @font-face {
+        font-family:myPremiumFont !important;
+        src: url("../fonts/Comfortaa (1)/Comfortaa-VariableFont_wght.ttf");
+    }
+  }
+  
+  
+  /* line 75, src/assets/scss/custom/_style.scss */
+  .h1,
+  .display-1,
+  .h2,
+  .display-2,
+  .h3,
+  .display-3,
+  .h4,
+  .display-4,
+  .h5,
+  .display-5,
+  .h6,
+  .display-6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(myPremiumFont);
+    color: var(--bs-first-color-macber);
+  }
+  
+  
+  @media (min-width: 1200px) {
+    /* line 97, src/assets/scss/custom/_style.scss */
+    .h2,
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* line 103, src/assets/scss/custom/_style.scss */
+  .h5,
+  .h6,
+  h5,
+  h6 {
+    margin-bottom: 0.375rem;
+  }
+  
+  /* line 109, src/assets/scss/custom/_style.scss */
+  .h5,
+  .h6,
+  h5,
+  h6 {
+    font-weight: 600;
+  }
+  
+  /* line 115, src/assets/scss/custom/_style.scss */
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 700;
+  }
+  .small-text{
+    color: var(--bs-second-color-macber);
+  }
+  .fw-bold{
+    font-weight: 800;
+  }
+  me-2{
+    margin-right: 1.5rem !important;
+  }
+  /* line 125, src/assets/scss/custom/_style.scss for p */ 
+  .lead {
+   font-family: myPremiumFont !important;
+    font-weight: 400;
+    font-size: 18px;
+    color: #575757;
+    line-height: 1.7;
+  }
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    /* line 129, src/assets/scss/custom/_style.scss */
+    .lead {
+      font-size: 1.125rem;
+    }
+    /* line 132, src/assets/scss/custom/_style.scss */
+    .blockquote {
+      font-size: 1.0625rem !important;
+    }
+  }
+  
+  /* line 136, src/assets/scss/custom/_style.scss */
+  a,
+  .btn-link {
+    color: var(--bs-primary-light);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* line 141, src/assets/scss/custom/_style.scss */
+  a:hover,
+  .btn-link:hover {
+    color: var(--bs-primary);
+    text-decoration: none;
+  }
+  
+  /* line 146, src/assets/scss/custom/_style.scss */
+  .link-text,
+  .watch-now-btn {
+    font-family: var(--bs-font-monospace);
+    font-weight: 500;
+  }
+  
+  /* line 151, src/assets/scss/custom/_style.scss */
+  .watch-now-btn {
+    font-size: 14px;
+    color: var(--bs-secondary-dark);
+    text-align: center;
+  }
+  
+  /* line 156, src/assets/scss/custom/_style.scss */
+  .watch-now-btn i {
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 12px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid var(--bs-light);
+    margin-right: 10px;
+    border-radius: 50%;
+    color: var(--bs-light);
+  }
+  
+  /* line 167, src/assets/scss/custom/_style.scss */
+  .watch-now-btn:hover {
+    color: var(--bs-white);
+  }
+  
+  /* line 170, src/assets/scss/custom/_style.scss */
+  .watch-now-btn:hover i {
+    background: var(--bs-light);
+    color: var(--bs-dark-light);
+  }
+  
+  @media (min-width: 367px) and (max-width: 575px) {
+    /* line 175, src/assets/scss/custom/_style.scss */
+    .watch-now-btn {
+      margin-left: 10px;
+    }
+  }
+  
+  /*======================
+  02. PRE DEFINE CLASS CSS
+  =======================*/
+  /* line 182, src/assets/scss/custom/_style.scss */
+  .ptb-120 {
+    padding: 120px 0;
+  }
+  
+  /* line 185, src/assets/scss/custom/_style.scss */
+  .ptb-100 {
+    padding: 100px 0;
+  }
+  
+  /* line 188, src/assets/scss/custom/_style.scss */
+  .pl-100 {
+    padding-left: 100px;
+  }
+  
+  /* line 191, src/assets/scss/custom/_style.scss */
+  .pr-100 {
+    padding-right: 100px;
+  }
+  
+  /* line 194, src/assets/scss/custom/_style.scss */
+  .p-100 {
+    padding: 100px;
+  }
+  
+  /* line 197, src/assets/scss/custom/_style.scss */
+  .p-50 {
+    padding: 50px;
+  }
+  
+  /* line 200, src/assets/scss/custom/_style.scss */
+  .pt-120 {
+    padding-top: 120px;
+  }
+  
+  /* line 203, src/assets/scss/custom/_style.scss */
+  .pt-80 {
+    padding-top: 80px;
+  }
+  
+  /* line 206, src/assets/scss/custom/_style.scss */
+  .pb-80 {
+    padding-bottom: 80px;
+  }
+  
+  /* line 210, src/assets/scss/custom/_style.scss */
+  .pb-120 {
+    padding-bottom: 120px;
+  }
+  
+  /* line 214, src/assets/scss/custom/_style.scss */
+  .ptb-60 {
+    padding: 60px 0;
+  }
+  
+  /* line 218, src/assets/scss/custom/_style.scss */
+  .pt-60 {
+    padding-top: 60px;
+  }
+  
+  /* line 222, src/assets/scss/custom/_style.scss */
+  .pb-60 {
+    padding-bottom: 60px;
+  }
+  
+  /* line 225, src/assets/scss/custom/_style.scss */
+  .mt--100 {
+    margin-top: -100px;
+  }
+  
+  /* line 228, src/assets/scss/custom/_style.scss */
+  .mt-100 {
+    margin-top: 100px;
+  }
+  
+  /* line 231, src/assets/scss/custom/_style.scss */
+  .mt-60 {
+    margin-top: 60px;
+  }
+  
+  /* line 234, src/assets/scss/custom/_style.scss */
+  .z-2 {
+    z-index: 2;
+  }
+  
+  /* line 237, src/assets/scss/custom/_style.scss */
+  .z-5 {
+    z-index: 5;
+  }
+  
+  /* line 240, src/assets/scss/custom/_style.scss */
+  .z-10 {
+    z-index: 10;
+  }
+  
+  /* line 243, src/assets/scss/custom/_style.scss */
+  .z--1 {
+    z-index: -1;
+  }
+  
+  /* line 246, src/assets/scss/custom/_style.scss */
+  .top--40 {
+    top: -40px !important;
+  }
+  
+  /* line 249, src/assets/scss/custom/_style.scss */
+  .top--100 {
+    top: -100px !important;
+  }
+  
+  /* line 252, src/assets/scss/custom/_style.scss */
+  .bottom--40 {
+    bottom: -40px !important;
+  }
+  
+  /* line 255, src/assets/scss/custom/_style.scss */
+  .bottom--100 {
+    bottom: -100px !important;
+  }
+  
+  /* line 258, src/assets/scss/custom/_style.scss */
+  .right--40 {
+    right: -40px !important;
+  }
+  
+  /* line 261, src/assets/scss/custom/_style.scss */
+  .right-0 {
+    right: 0;
+  }
+  
+  /* line 264, src/assets/scss/custom/_style.scss */
+  .left-0 {
+    left: 0;
+  }
+  
+  /* line 267, src/assets/scss/custom/_style.scss */
+  .left--40 {
+    left: -40px !important;
+  }
+  
+  /* line 270, src/assets/scss/custom/_style.scss */
+  .left--100 {
+    left: -100px !important;
+  }
+  
+  /* line 273, src/assets/scss/custom/_style.scss */
+  .right--100 {
+    right: -100px !important;
+  }
+  
+  /* line 276, src/assets/scss/custom/_style.scss */
+  .left-30 {
+    left: 30%;
+  }
+  
+  /* line 279, src/assets/scss/custom/_style.scss */
+  .left-5 {
+    left: 5%;
+  }
+  
+  /* line 282, src/assets/scss/custom/_style.scss */
+  .right-5 {
+    right: 5%;
+  }
+  
+  /* line 285, src/assets/scss/custom/_style.scss */
+  .mw-60 {
+    max-width: 60% !important;
+  }
+  
+  @media (min-width: 320px) and (max-width: 991px) {
+    /* line 289, src/assets/scss/custom/_style.scss */
+    .ptb-120 {
+      padding: 60px 0;
+    }
+    /* line 292, src/assets/scss/custom/_style.scss */
+    .pb-120 {
+      padding-bottom: 60px;
+    }
+    /* line 295, src/assets/scss/custom/_style.scss */
+    .pt-120 {
+      padding-top: 60px;
+    }
+    /* line 298, src/assets/scss/custom/_style.scss */
+    .mt-100 {
+      margin-top: 60px;
+    }
+    /* line 301, src/assets/scss/custom/_style.scss */
+    .search-form.w-50 {
+      width: 100% !important;
+    }
+    /* line 304, src/assets/scss/custom/_style.scss */
+    .pt-60 {
+      padding-top: 30px;
+    }
+  }
+  
+  @media (min-width: 320px) and (max-width: 575px) {
+    /* line 309, src/assets/scss/custom/_style.scss */
+    .p-100 {
+      padding: 60px 2rem;
+    }
+    /* line 312, src/assets/scss/custom/_style.scss */
+    .mw-60 {
+      max-width: 100% !important;
+    }
+  }
+  
+  /* line 317, src/assets/scss/custom/_style.scss */
+  .icon-sm {
+    font-size: 25px;
+  }
+  
+  /*color utility*/
+  /* line 322, src/assets/scss/custom/_style.scss */
+  .color {
+    position: relative;
+    display: block;
+    min-height: 50px;
+    padding: 1rem 1rem;
+  }
+  
+  /* line 328, src/assets/scss/custom/_style.scss */
+  .color span {
+    color: var(--bs-white);
+  }
+
+  .bg-purple {
+    background-color: var(--bs-first-color-macber) !important;
+  }
+  /* line 332, src/assets/scss/custom/_style.scss */
+  .bg-primary-soft {
+    background-color: var(--bs-primary-soft);
+  }
+  
+  /* line 335, src/assets/scss/custom/_style.scss */
+  .bg-primary-light {
+    background-color: var(--bs-primary-light);
+  }
+  
+  /* line 338, src/assets/scss/custom/_style.scss */
+  .bg-primary {
+    background-color: var(--bs-primary) !important;
+  }
+  
+  /* line 341, src/assets/scss/custom/_style.scss */
+  .bg-primary-dark {
+    background-color: var(--bs-primary-dark);
+  }
+  
+  /* line 345, src/assets/scss/custom/_style.scss */
+  .bg-info-soft {
+    background-color: var(--bs-info-soft);
+  }
+  
+  /* line 348, src/assets/scss/custom/_style.scss */
+  .bg-info-light {
+    background-color: var(--bs-info-light);
+  }
+  
+  /* line 351, src/assets/scss/custom/_style.scss */
+  .bg-info {
+    background-color: var(--bs-info) !important;
+  }
+  
+  /* line 354, src/assets/scss/custom/_style.scss */
+  .bg-info-dark {
+    background-color: var(--bs-info-dark);
+  }
+  
+  /* line 358, src/assets/scss/custom/_style.scss */
+  .bg-success-soft {
+    background-color: var(--bs-success-soft);
+  }
+  
+  /* line 361, src/assets/scss/custom/_style.scss */
+  .bg-success-light {
+    background-color: var(--bs-success-light);
+  }
+  
+  /* line 364, src/assets/scss/custom/_style.scss */
+  .bg-success {
+    background-color: var(--bs-success) !important;
+  }
+  
+  /* line 367, src/assets/scss/custom/_style.scss */
+  .bg-success-dark {
+    background-color: var(--bs-success-dark);
+  }
+  
+  /* line 371, src/assets/scss/custom/_style.scss */
+  .bg-warning-soft {
+    background-color: var(--bs-warning-soft);
+  }
+  
+  /* line 374, src/assets/scss/custom/_style.scss */
+  .bg-warning-light {
+    background-color: var(--bs-warning-light);
+  }
+  
+  /* line 377, src/assets/scss/custom/_style.scss */
+  .bg-warning {
+    background-color: var(--bs-warning) !important;
+  }
+  
+  /* line 380, src/assets/scss/custom/_style.scss */
+  .bg-warning-dark {
+    background-color: var(--bs-warning-dark);
+  }
+  
+  /* line 384, src/assets/scss/custom/_style.scss */
+  .bg-danger-soft {
+    background-color: var(--bs-danger-soft);
+  }
+  
+  /* line 387, src/assets/scss/custom/_style.scss */
+  .bg-danger-light {
+    background-color: var(--bs-danger-light);
+  }
+  
+  /* line 390, src/assets/scss/custom/_style.scss */
+  .bg-danger {
+    background-color: var(--bs-danger) !important;
+  }
+  
+  /* line 393, src/assets/scss/custom/_style.scss */
+  .bg-danger-dark {
+    background-color: var(--bs-danger-dark);
+  }
+  
+  /* line 397, src/assets/scss/custom/_style.scss */
+  .bg-dark-soft {
+    background-color: var(--bs-dark-soft);
+  }
+  
+  /* line 400, src/assets/scss/custom/_style.scss */
+  .bg-dark-light {
+    background-color: var(--bs-dark-light);
+  }
+  
+  /* line 403, src/assets/scss/custom/_style.scss */
+  .bg-dark {
+    background-color: var(--bs-dark) !important;
+  }
+  
+  /* line 406, src/assets/scss/custom/_style.scss */
+  .bg-dark-dark {
+    background-color: var(--bs-dark-dark);
+  }
+  
+  /* line 410, src/assets/scss/custom/_style.scss */
+  .bg-purple {
+    background-color: var(--bs-purple) !important;
+  }
+  
+  /* line 414, src/assets/scss/custom/_style.scss */
+  .bg-secondary-light {
+    background-color: var(--bs-secondary-light);
+  }
+  
+  /* line 417, src/assets/scss/custom/_style.scss */
+  .bg-secondary {
+    background-color: var(--bs-secondary) !important;
+  }
+  
+  /* line 420, src/assets/scss/custom/_style.scss */
+  .bg-secondary-dark {
+    background-color: var(--bs-secondary-dark);
+  }
+  
+  /* line 424, src/assets/scss/custom/_style.scss */
+  .bg-custom-light {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /*gradient bg*/
+  /* line 428, src/assets/scss/custom/_style.scss */
+  .primary-bg-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(var(--bs-dark)), to(var(--bs-primary))) !important;
+    background: linear-gradient(90deg, var(--bs-dark), var(--bs-primary)) !important;
+  }
+  
+  /* line 436, src/assets/scss/custom/_style.scss */
+  .info-bg-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(var(--bs-primary)), to(var(--bs-info))) !important;
+    background: linear-gradient(90deg, var(--bs-primary), var(--bs-info)) !important;
+  }
+  
+  /* line 444, src/assets/scss/custom/_style.scss */
+  .success-bg-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(var(--bs-success)), to(var(--bs-success-dark))) !important;
+    background: linear-gradient(90deg, var(--bs-success), var(--bs-success-dark)) !important;
+  }
+  
+  /* line 451, src/assets/scss/custom/_style.scss */
+  .warning-bg-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(var(--bs-warning-light)), to(var(--bs-warning-dark))) !important;
+    background: linear-gradient(90deg, var(--bs-warning-light), var(--bs-warning-dark)) !important;
+  }
+  
+  /* line 459, src/assets/scss/custom/_style.scss */
+  .danger-bg-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(var(--bs-danger-light)), to(var(--bs-danger-dark))) !important;
+    background: linear-gradient(90deg, var(--bs-danger-light), var(--bs-danger-dark)) !important;
+  }
+  
+  /* line 467, src/assets/scss/custom/_style.scss */
+  .dark-bg-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(var(--bs-primary)), to(var(--bs-dark))) !important;
+    background: linear-gradient(90deg, var(--bs-primary), var(--bs-dark)) !important;
+  }
+  
+  /* line 474, src/assets/scss/custom/_style.scss */
+  .secondary-bg-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(var(--bs-secondary-light)), to(var(--bs-secondary-dark))) !important;
+    background: linear-gradient(90deg, var(--bs-secondary-light), var(--bs-secondary-dark)) !important;
+  }
+  
+  /* line 481, src/assets/scss/custom/_style.scss */
+  /* .bg-gradient {
+    background: -webkit-gradient(linear, left top, right top, from(#021048), to(#1e38a3)) !important;
+    background: linear-gradient(90deg, #021048, #1e38a3) !important;
+  } */
+  
+  /* line 485, src/assets/scss/custom/_style.scss */
+  .text-purble {
+    color: var(--bs-first-color-macber) !important;
+  }
+
+  .text-primary {
+    color: var(--bs-primary) !important;
+  }
+  
+  /* line 488, src/assets/scss/custom/_style.scss */
+  .border-primary {
+    border-color: var(--bs-primary) !important;
+  }
+  
+  /* line 491, src/assets/scss/custom/_style.scss */
+  .text-dark {
+    color: var(--bs-dark) !important;
+  }
+  
+  /* line 494, src/assets/scss/custom/_style.scss */
+  .border-dark {
+    border-color: var(--bs-dark) !important;
+  }
+  
+  /* line 497, src/assets/scss/custom/_style.scss */
+  .text-success {
+    color: var(--bs-success) !important;
+  }
+  
+  /* line 500, src/assets/scss/custom/_style.scss */
+  .border-success {
+    border-color: var(--bs-success) !important;
+  }
+  
+  /* line 503, src/assets/scss/custom/_style.scss */
+  .text-warning {
+    color: var(--bs-warning) !important;
+  }
+  
+  /* line 506, src/assets/scss/custom/_style.scss */
+  .border-warning {
+    border-color: var(--bs-warning) !important;
+  }
+  
+  /* line 509, src/assets/scss/custom/_style.scss */
+  .text-danger {
+    color: var(--bs-danger) !important;
+  }
+  
+  /* line 512, src/assets/scss/custom/_style.scss */
+  .border-danger {
+    border-color: var(--bs-danger) !important;
+  }
+  
+  /* line 515, src/assets/scss/custom/_style.scss */
+  .border-light {
+    border-color: rgba(101, 101, 101, 0.1) !important;
+  }
+  
+  /*button style*/
+  /* line 519, src/assets/scss/custom/_style.scss */
+  .link-with-icon {
+    display: inline-block;
+    font-size: 15px;
+    font-family: var(--bs-font-monospace);
+    font-weight: 500;
+    color: var(--body-color);
+  }
+  
+  /* line 526, src/assets/scss/custom/_style.scss */
+  .link-with-icon i {
+    vertical-align: middle;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    padding-left: 4px;
+  }
+  
+  /* line 531, src/assets/scss/custom/_style.scss */
+  .link-with-icon:hover i {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+    margin-left: 3px;
+  }
+  
+  /* line 535, src/assets/scss/custom/_style.scss */
+  .bg-dark .link-with-icon,
+  .bg-gradient .link-with-icon {
+    color: var(--bs-secondary-dark);
+  }
+  
+  /* line 539, src/assets/scss/custom/_style.scss */
+  .btn {
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 0.65rem 1.75rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-weight: 500;
+    border-radius: 0.375rem;
+    font-family: var(--bs-font-monospace);
+    border: 2px solid transparent;
+  }
+  
+  /* line 550, src/assets/scss/custom/_style.scss */
+  .btn:focus,
+  .btn:active,
+  .btn-primary.active:focus,
+  .btn-primary:active:focus,
+  .btn-outline-primary:active:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .btn:focus,
+  .btn:active,
+  .btn-yellow.active:focus,
+  .btn-yellow:active:focus,
+  .btn-outline-yellow:active:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  
+
+  
+  /* line 558, src/assets/scss/custom/_style.scss */
+  .btn-group-lg > .btn,
+  .btn-sm {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  /* line 564, src/assets/scss/custom/_style.scss */
+  .btn-group-lg > .btn,
+  .btn-lg {
+    padding: 1rem 1.875rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* line 570, src/assets/scss/custom/_style.scss */
+  .btn-xl {
+    padding: 1.5rem 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  /* line 575, src/assets/scss/custom/_style.scss */
+  .button-style > .btn {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+  }
+  
+  /* line 578, src/assets/scss/custom/_style.scss */
+  .btn-icon {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: 0;
+  }
+  
+  /* line 586, src/assets/scss/custom/_style.scss */
+  .btn-primary {
+    color: var(--bs-white);
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    -webkit-box-shadow: 0 11px 18px -8px rgba(23, 92, 255, 0.6);
+            box-shadow: 0 11px 18px -8px rgba(23, 92, 255, 0.6);
+  }
+
+  .btn-yellow {
+    color: var(--bs-white);
+    background-color: var(--bs-second-color-macber);
+    border-color: var(--bs-second-color-macber);
+    -webkit-box-shadow: 0 11px 18px -8px #fad62c;
+            box-shadow: 0 11px 18px -8px #fad62c;
+  }
+  
+  /* line 592, src/assets/scss/custom/_style.scss */
+  .btn-primary:focus {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+  }
+
+  .btn-yellow:focus {
+    background-color: var(--bs-second-color-soft);
+    border-color: var(--bs-second-color-soft);
+  }
+
+  /* line 596, src/assets/scss/custom/_style.scss */
+  .btn-soft-primary {
+    color: var(--bs-primary);
+    background-color: var(--bs-primary-soft);
+    border-color: var(--bs-primary-soft);
+  }
+  
+  /* line 601, src/assets/scss/custom/_style.scss */
+  .btn-outline-primary {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+  }
+  
+  /* line 605, src/assets/scss/custom/_style.scss */
+  .btn-primary:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-primary-dark);
+    border-color: var(--bs-primary-dark);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .btn-yellow:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-second-color-dark);
+    border-color: var(--bs-second-color-dark);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .btn-purble {
+    color: var(--bs-white);
+    background-color: var(--bs-first-color-macber);
+    border-color: var(--bs-first-color-macber);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .btn-purble:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-second-color-macber);
+    border-color: var(--bs-second-color-macber);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  
+  /* line 611, src/assets/scss/custom/_style.scss */
+  .btn-soft-primary:hover,
+  .btn-outline-primary:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+  }
+  
+  /* line 618, src/assets/scss/custom/_style.scss */
+  .btn-info {
+    color: var(--bs-white);
+    background-color: var(--bs-info);
+    border-color: var(--bs-info);
+  }
+  
+  /* line 623, src/assets/scss/custom/_style.scss */
+  .btn-soft-info {
+    color: var(--bs-info);
+    background-color: var(--bs-info-soft);
+    border-color: var(--bs-info-soft);
+  }
+  
+  /* line 628, src/assets/scss/custom/_style.scss */
+  .btn-outline-info {
+    color: var(--bs-info);
+    border-color: var(--bs-info);
+  }
+  
+  /* line 632, src/assets/scss/custom/_style.scss */
+  .btn-info:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-info-dark);
+    border-color: var(--bs-info-dark);
+  }
+  
+  /* line 637, src/assets/scss/custom/_style.scss */
+  .btn-soft-info:hover,
+  .btn-outline-info:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-info);
+    border-color: var(--bs-info);
+  }
+  
+  /* line 644, src/assets/scss/custom/_style.scss */
+  .btn-success {
+    color: var(--bs-white);
+    background-color: var(--bs-success);
+    border-color: var(--bs-success);
+  }
+  
+  /* line 649, src/assets/scss/custom/_style.scss */
+  .btn-soft-success {
+    color: var(--bs-success);
+    background-color: var(--bs-success-soft);
+    border-color: var(--bs-success-soft);
+  }
+  
+  /* line 654, src/assets/scss/custom/_style.scss */
+  .btn-outline-success {
+    color: var(--bs-success);
+    border-color: var(--bs-success);
+  }
+  
+  /* line 658, src/assets/scss/custom/_style.scss */
+  .btn-success:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-success-dark);
+    border-color: var(--bs-success-dark);
+  }
+  
+  /* line 663, src/assets/scss/custom/_style.scss */
+  .btn-soft-success:hover,
+  .btn-outline-success:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-success);
+    border-color: var(--bs-success);
+  }
+  
+  /* line 670, src/assets/scss/custom/_style.scss */
+  .btn-warning {
+    color: var(--bs-white);
+    background-color: var(--bs-warning);
+    border-color: var(--bs-warning);
+  }
+  
+  /* line 675, src/assets/scss/custom/_style.scss */
+  .btn-soft-warning {
+    color: var(--bs-warning);
+    background-color: var(--bs-warning-soft);
+    border-color: var(--bs-warning-soft);
+  }
+  
+  /* line 680, src/assets/scss/custom/_style.scss */
+  .btn-outline-warning {
+    color: var(--bs-warning);
+    border-color: var(--bs-warning);
+  }
+  
+  /* line 684, src/assets/scss/custom/_style.scss */
+  .btn-warning:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-warning-dark);
+    border-color: var(--bs-warning-dark);
+  }
+  
+  /* line 689, src/assets/scss/custom/_style.scss */
+  .btn-soft-warning:hover,
+  .btn-outline-warning:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-warning);
+    border-color: var(--bs-warning);
+  }
+  
+  /* line 696, src/assets/scss/custom/_style.scss */
+  .btn-danger {
+    color: var(--bs-white);
+    background-color: var(--bs-danger);
+    border-color: var(--bs-danger);
+  }
+  
+  /* line 701, src/assets/scss/custom/_style.scss */
+  .btn-soft-danger {
+    color: var(--bs-danger);
+    background-color: var(--bs-danger-soft);
+    border-color: var(--bs-danger-soft);
+  }
+  
+  /* line 706, src/assets/scss/custom/_style.scss */
+  .btn-outline-danger {
+    color: var(--bs-danger);
+    border-color: var(--bs-danger);
+  }
+  
+  /* line 710, src/assets/scss/custom/_style.scss */
+  .btn-danger:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-danger-dark);
+    border-color: var(--bs-danger-dark);
+  }
+  
+  /* line 715, src/assets/scss/custom/_style.scss */
+  .btn-soft-danger:hover,
+  .btn-outline-danger:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-danger);
+    border-color: var(--bs-danger);
+  }
+  
+  /* line 722, src/assets/scss/custom/_style.scss */
+  .btn-dark {
+    color: var(--bs-white);
+    background-color: var(--bs-dark);
+    border-color: var(--bs-dark);
+  }
+  
+  /* line 727, src/assets/scss/custom/_style.scss */
+  .btn-soft-dark {
+    color: var(--bs-dark);
+    background-color: var(--bs-dark-soft);
+    border-color: var(--bs-dark-soft);
+  }
+  
+  /* line 732, src/assets/scss/custom/_style.scss */
+  .btn-outline-dark {
+    color: var(--bs-dark);
+    border-color: var(--bs-dark);
+  }
+  
+  /* line 736, src/assets/scss/custom/_style.scss */
+  .btn-dark:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-dark-dark);
+    border-color: var(--bs-dark-dark);
+  }
+  
+  /* line 741, src/assets/scss/custom/_style.scss */
+  .btn-soft-dark:hover,
+  .btn-outline-dark:hover {
+    color: var(--bs-white);
+    background-color: var(--bs-dark);
+    border-color: var(--bs-dark);
+  }
+  
+  /* line 748, src/assets/scss/custom/_style.scss */
+  .btn-outline-light {
+    color: var(--bs-secondary-dark);
+    border-color: var(--bs-secondary-dark);
+  }
+  
+  /* line 753, src/assets/scss/custom/_style.scss */
+  .btn-secondary {
+    color: var(--bs-dark);
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary);
+  }
+  
+  /* line 758, src/assets/scss/custom/_style.scss */
+  .btn-secondary:hover {
+    color: var(--bs-dark);
+    background-color: var(--bs-secondary-dark);
+    border-color: var(--bs-secondary-dark);
+  }
+  
+  /* line 763, src/assets/scss/custom/_style.scss */
+  .read-more-link {
+    font-weight: 600;
+    font-family: var(--bs-font-monospace);
+    font-size: 15px;
+  }
+  
+  /* line 768, src/assets/scss/custom/_style.scss */
+  .read-more-link i {
+    vertical-align: middle;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  /* line 772, src/assets/scss/custom/_style.scss */
+  .read-more-link:hover i {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+    margin-left: 10px;
+  }
+  
+  /* line 777, src/assets/scss/custom/_style.scss */
+  .google-btn,
+  .facebook-btn {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  /* line 781, src/assets/scss/custom/_style.scss */
+  .google-btn:hover,
+  .facebook-btn:hover {
+    background: var(--bs-primary-soft) !important;
+  }
+  
+  /* line 786, src/assets/scss/custom/_style.scss */
+  .divider-bar {
+    width: 100%;
+    min-height: 1px;
+    background-color: var(--bs-secondary);
+  }
+  
+  /* line 791, src/assets/scss/custom/_style.scss */
+  .divider-text {
+    width: 60px;
+    min-width: 60px;
+    line-height: 1.056em;
+  }
+  
+  /* line 796, src/assets/scss/custom/_style.scss */
+  .fw-medium {
+    font-weight: 600;
+  }
+  
+  /* line 800, src/assets/scss/custom/_style.scss */
+  .fw-semi-bold {
+    font-weight: 700;
+  }
+  
+  /* line 804, src/assets/scss/custom/_style.scss */
+  .fw-bold {
+    font-weight: 800 !important;
+  }
+  
+  /* line 807, src/assets/scss/custom/_style.scss */
+  .rounded-custom {
+    border-radius: 1rem !important;
+  }
+  
+  /* line 811, src/assets/scss/custom/_style.scss */
+  .bg-primary h1,
+  .bg-primary h2,
+  .bg-primary h3,
+  .bg-primary h4,
+  .bg-primary h5,
+  .bg-primary h6,
+  .bg-dark h1,
+  .bg-dark h2,
+  .bg-dark h3,
+  .bg-dark h4,
+  .bg-dark h5,
+  .bg-dark h6,
+  .bg-gradient h1,
+  .bg-gradient h2,
+  .bg-gradient h3,
+  .bg-gradient h4,
+  .bg-gradient h5,
+  .bg-gradient h6,
+  .bg-purple h1,
+  .bg-purple h2,
+  .bg-purple h3,
+  .bg-purple h4,
+  .bg-purple h5,
+  .bg-purple h6 {
+    color: var(--bs-white);
+  }
+  
+  /* line 837, src/assets/scss/custom/_style.scss */
+  .bg-primary p,
+  .bg-primary li,
+  .bg-primary span,
+  .bg-dark p,
+  .bg-dark li,
+  .bg-dark span,
+  .bg-gradient p,
+  .bg-gradient li,
+  .bg-gradient span,
+  .bg-purple p,
+  .bg-purple li,
+  .bg-purple span {
+    color: var(--bs-secondary-dark);
+  }
+  
+  /* line 851, src/assets/scss/custom/_style.scss */
+  .bg-white h1,
+  .bg-white h2,
+  .bg-white h3,
+  .bg-white h4,
+  .bg-white h5,
+  .bg-white h6,
+  .bg-light h1,
+  .bg-light h2,
+  .bg-light h3,
+  .bg-light h4,
+  .bg-light h5,
+  .bg-light h6 {
+    color: initial;
+  }
+  
+  /* line 865, src/assets/scss/custom/_style.scss */
+  .bg-light > .bg-dark h1,
+  .bg-light .bg-dark h2,
+  .bg-light .bg-dark h3,
+  .bg-light .bg-dark h4,
+  .bg-light .bg-dark h5,
+  .bg-light .bg-dark h6,
+  .bg-light > .bg-gradient h1,
+  .bg-light .bg-gradient h2,
+  .bg-light .bg-gradient h3,
+  .bg-light .bg-gradient h4,
+  .bg-light .bg-gradient h5,
+  .bg-light .bg-gradient h6 {
+    color: var(--bs-white);
+  }
+  
+  /* line 879, src/assets/scss/custom/_style.scss */
+  .bg-white p,
+  .bg-white li,
+  .bg-white span {
+    color: var(--body-color);
+  }
+  
+  /* line 884, src/assets/scss/custom/_style.scss */
+  .text-white-60 {
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+  
+  /* line 887, src/assets/scss/custom/_style.scss */
+  .text-white-70 {
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+  
+  /* line 890, src/assets/scss/custom/_style.scss */
+  .text-white-80 {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  
+  /* line 893, src/assets/scss/custom/_style.scss */
+  .text-white-90 {
+    color: rgba(255, 255, 255, 0.9) !important;
+  }
+  
+  /*form input*/
+  /* line 897, src/assets/scss/custom/_style.scss */
+  input[type]::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder,
+  select::-webkit-input-placeholder,
+  select.custom-select {
+    color: #7e8086 !important;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  /* line 906, src/assets/scss/custom/_style.scss */
+  input[type]:-moz-placeholder,
+  textarea:-moz-placeholder,
+  select:-moz-placeholder,
+  select.custom-select {
+    /* Firefox 18- */
+    color: #7e8086;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  /* line 916, src/assets/scss/custom/_style.scss */
+  input[type]::-moz-placeholder,
+  textarea::-moz-placeholder,
+  select::-moz-placeholder,
+  select.custom-select {
+    /* Firefox 19+ */
+    color: #7e8086;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  /* line 926, src/assets/scss/custom/_style.scss */
+  input[type]:-ms-input-placeholder,
+  textarea:-ms-input-placeholder,
+  select:-ms-input-placeholder,
+  select.custom-select {
+    color: #7e8086;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  /* line 935, src/assets/scss/custom/_style.scss */
+  select.form-select {
+    background-image: url(../img/dropdown-arrow.svg);
+  }
+  
+  /* line 939, src/assets/scss/custom/_style.scss */
+  select:invalid {
+    color: #7e8086;
+  }
+  
+  /* line 943, src/assets/scss/custom/_style.scss */
+  .form-control,
+  .custom-select {
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    height: calc(1.6em + 1.5rem + 2px);
+    padding: 0.75rem 1rem;
+    color: var(--body-color);
+    background-clip: padding-box;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border-radius: 0.375rem;
+  }
+  
+  /* line 957, src/assets/scss/custom/_style.scss */
+  .form-control:focus,
+  .custom-select:focus {
+    color: var(--bs-dark);
+    background-color: var(--bs-white);
+    border-color: var(--bs-primary-light);
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  
+  /* line 965, src/assets/scss/custom/_style.scss */
+  .subscribe-feature-list li span {
+    margin: 0 15px;
+    font-size: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  /* line 971, src/assets/scss/custom/_style.scss */
+  .subscribe-feature-list li span i {
+    font-size: 16px;
+  }
+  
+  /* line 974, src/assets/scss/custom/_style.scss */
+  .bg-dark .subscribe-feature-list li span i {
+    color: var(--bs-secondary-dark) !important;
+  }
+  
+  /* line 977, src/assets/scss/custom/_style.scss */
+  .register-form label:not(.form-check-label) {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--bs-font-monospace);
+  }
+  
+  /* line 982, src/assets/scss/custom/_style.scss */
+  .form-check-label {
+    font-size: 13px;
+  }
+  
+  /* line 985, src/assets/scss/custom/_style.scss */
+  .sign-up-in-section {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  
+  /*sticky sidebar*/
+  /* line 992, src/assets/scss/custom/_style.scss */
+  .sticky-sidebar {
+    position: sticky;
+    top: 100px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  /* line 997, src/assets/scss/custom/_style.scss */
+  .style-guide .bg-primary-soft .style-guide-heading h2 {
+    margin-bottom: 0;
+    font-size: 1.75rem;
+  }
+
+  h1{
+      font-family: myPremiumFont;
+      font-weight: 800;
+  }
