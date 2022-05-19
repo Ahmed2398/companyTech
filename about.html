@@ -13,13 +13,16 @@
     <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/Hover-master/Hover-master/css/hover-min.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="fonts/Comfortaa (1)/Comfortaa-VariableFont_wght.ttf">
     <link rel="stylesheet" href="icons/fontawesome-free-6.1.1-web (1)/fontawesome-free-6.1.1-web/css/all.css">
     <!-- END ADD STYLESHEET -->
 </head>
 
-<body>
+<body onload="loadfun()">
+<div id="Loading"></div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
     <!-- START_NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light  sticky">
         <a class="navbar-brand" href="index.html"><img src="images/Macber logo.svg" class="w-100"
@@ -66,10 +69,10 @@
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="btn btn-login  btn-sm  mr-2" href="login.html">Login</a>
+                    <a class="btn btn-login  btn-sm  m-2" href="login.html">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-login btn-sm" href="register.html">Register</a>
+                    <a class="btn btn-login btn-sm m-2" href="register.html">Register</a>
                 </li>
             </ul>
         </div>
@@ -107,7 +110,7 @@
                                         Macber</h1>
                                     <p class="lead">Dynamically disintermediate technically sound technologies with
                                         compelling quality vectors error-free communities. </p>
-                                    <a href="#" class="btn btn-primary mt-4 me-3">Open Positions</a>
+                                    <a href="#" class="btn btn-yellow mt-4 me-3">Open Positions</a>
                                     <a href="#" class="btn btn-soft-primary mt-4">Meet Our Team</a>
                                 </div>
                                 <img src="images/about-img-3.jpg" alt="about"
@@ -126,7 +129,7 @@
                     </div>
 
                     <div class="clients-image">
-                        <div class="col-lg-6 col-md-6 col-sm-6 d-flex pt-5">
+                        <div class="col-lg-6 col-md-6 col-sm-6 d-flex pt-5 logos-img">
                             <div>
                                 <img src="images/client-1.svg">
                             </div>
@@ -583,7 +586,7 @@
                                 <input type="text" class="input-newsletter form-control me-2"
                                     placeholder="Enter your email" name="email" required="" autocomplete="off">
                                 <input type="submit" value="Subscribe" data-wait="Please wait..."
-                                    class="btn btn-primary mt-3 mt-lg-0 mt-md-0">
+                                    class="btn btn-yellow mt-3 mt-lg-0 mt-md-0">
                             </form>
                             <div class="ratting-wrap mt-4">
                                 <h6 class="mb-0">10/10 Overall rating</h6>
@@ -617,7 +620,7 @@
                             <div class="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                                 <div class="footer-single-col">
                                     <h3>Quick Links</h3>
-                                    <ul class="list-unstyled footer-nav-list mb-lg-0 text-center">
+                                    <ul class="list-unstyled footer-nav-list mb-lg-0 text-left">
                                         <li><a href="index.html" class="text-decoration-none">Home</a></li>
                                         <li><a href="about-us.html" class="text-decoration-none">About Us</a></li>
                                         <li><a href="services.html" class="text-decoration-none">Services</a></li>
@@ -693,6 +696,8 @@
     </footer>
     <!-- End Footer Section -->
     <!-- ADD JAVASCRIPT SRC -->
+ 
+ <script src="js/main.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

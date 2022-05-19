@@ -36,7 +36,7 @@
 .testimonial .nav-link{
     border-color: rgba(101, 101, 101, 0.06) !important;
     background: rgba(255, 255, 255, 0.1) !important;
-    margin: 0 1rem;
+    margin: 1rem 1rem;
 }
 
 .testimonial .tab-pane {
@@ -53,6 +53,8 @@
 .rounded-custom {
     border-radius: 1rem !important;
 }
+
+
 /* End Section */
 
 /* Process Section */
@@ -168,5 +170,66 @@
     min-width: 300px;
 }
 /* End Section */
+.boxes{
+    background-image:url(../images/box/Big-Logo.png) ;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.head-boxes{
+    margin-bottom: 3.5rem;
+}
+.head-boxes h1{
+    font-size: 6rem;
+}
+.office-address{
+    background: url('../images//box/1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    height: 100vh;
+    border-radius: 2rem;   
+    transition: ease-in-out 3s;
+    
+}
+.office-address2{
+    background: url('../images//box/2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    height: 100vh;
+    border-radius: 2rem;   
+    transition: ease-in-out 3s;
+
+    
+}
+.office-address3{
+    background: url('../images//box/3.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    height: 100vh;
+    border-radius: 2rem;   
+    transition: ease-in-out 3s;
+
+    
+}
+.office-address:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.office-address2:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    z-index: 10;
+}
+.office-address3:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.office-info{
+    padding-top: 50%;
+}
+
 
 
