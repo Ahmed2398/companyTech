@@ -17,7 +17,7 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  background: var(--bs-first-color-macber) url('https://media.giphy.com/media/grNkIEN4dkiMXFLIE9/giphy.gif');
+  background: var(--bs-first-color-Techno) url('https://media.giphy.com/media/grNkIEN4dkiMXFLIE9/giphy.gif');
   background-repeat: no-repeat;
   background-position: center;
   z-index: 99999 ;
@@ -32,7 +32,7 @@
   font-size: 28px;
   border: none;
   outline: none;
-  background-color: var(--bs-first-color-macber);
+  background-color: var(--bs-first-color-Techno);
   color: white;
   cursor: pointer;
   /* padding:15px; */
@@ -44,7 +44,7 @@
 
 
 #myBtn:hover {
-  background-color: var(--bs-second-color-macber);
+  background-color: var(--bs-second-color-Techno);
   transform: scale(1.1);
 }
 /* END  */
@@ -55,25 +55,25 @@
         font-weight: 600;
         position: relative;
         font-family: myPremiumFont !important;
-        /* color: var( --bs-first-color-macber) !important; */
+        /* color: var( --bs-first-color-Techno) !important; */
         animation: bounce; /* referring directly to the animation's @keyframe declaration */
        animation-duration: 2s; /* don't forget to set a duration! */
 }
 .navbar .active .nav-link {
-    color: var( --bs-first-color-macber) !important;
+    color: var( --bs-first-color-Techno) !important;
 }
 .navbar .nav-link:hover{
-    color: var(--bs-second-color-macber) !important;
+    color: var(--bs-second-color-Techno) !important;
     transition: ease-in 1s , ;
 }
 
 .navbar .btn-login{
-    background-color: var(--bs-first-color-macber);
+    background-color: var(--bs-first-color-Techno);
     color: var( --bs-light);
 }
 
 .btn-login:hover{
-    background-color: var(--bs-second-color-macber) ;
+    background-color: var(--bs-second-color-Techno) ;
     transition: width 2s linear 1s;
     transform: scale(1.1);
 }
@@ -83,12 +83,12 @@
 /* START hero-section Home Page */
 
 .hero-section{
-    background-color: var(--bs-first-color-macber);
+    background-color: var(--bs-first-color-Techno);
     color: var(--bs-light);
 }
 
 .hero-section .display-5{
-    color: var(--bs-second-color-macber);
+    color: var(--bs-second-color-Techno);
 }
 
 .hero-section .btn-yellow{
@@ -203,7 +203,7 @@
 /* Start Hero Section 2  */
 .hero-section-2{
   background-image: url(/images/page-header-bg.svg);
-  background-color: var(--bs-first-color-macber);
+  background-color: var(--bs-first-color-Techno);
   background-position: center;
   background-repeat: no-repeat;
   color: var(--bs-light);
@@ -234,7 +234,7 @@
 /* Footer */
 
 .footer-nav-list a , a{
-  color: var(--bs-second-color-macber);
+  color: var(--bs-second-color-Techno);
   font-weight: 600;
   text-align: center;
 }
@@ -245,7 +245,7 @@
 /* End Footer */
 
 .features-icon {
-  color: var(--bs-first-color-macber);
+  color: var(--bs-first-color-Techno);
   font-size: 2rem;
   padding: 1rem 0;
 }

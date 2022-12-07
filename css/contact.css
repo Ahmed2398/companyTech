@@ -4,7 +4,7 @@
 }
 .contact-us-promo i{
     font-size: 5rem;
-    color: var(--bs-first-color-macber);
+    color: var(--bs-first-color-Techno);
     margin-bottom: 1rem;
 }
 
@@ -12,7 +12,7 @@
 .form-control:focus, .custom-select:focus {
     color: var(--bs-dark);
     background-color: var(--bs-white);
-    border-color: var(--bs-first-color-macber);
+    border-color: var(--bs-first-color-Techno);
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;

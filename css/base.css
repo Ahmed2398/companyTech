@@ -34,10 +34,10 @@
     --body-color: #575757;
     --bs-light: #f7f9fc;
     --bs-white:#fff;
-    --bs-second-color-macber:#fad62c;
+    --bs-second-color-Techno:#fad62c;
     --bs-second-color-soft: #ffcf70;
     --bs-second-color-dark: #ffb116;
-    --bs-first-color-macber: #442772;
+    --bs-first-color-Techno: #442772;
     --bs-font-sans-serif: 'Open Sans', sans-serif;
     --bs-font-monospace: 'Poppins', sans-serif;
     --bs-font-comfortaa::myPremiumFont;
@@ -76,7 +76,7 @@
   h5,
   h6 {
     font-family: var(myPremiumFont);
-    color: var(--bs-first-color-macber);
+    color: var(--bs-first-color-Techno);
   }
   
   
@@ -116,7 +116,7 @@
     font-weight: 700;
   }
   .small-text{
-    color: var(--bs-second-color-macber);
+    color: var(--bs-second-color-Techno);
   }
   .fw-bold{
     font-weight: 800;
@@ -436,7 +436,7 @@
   }
 
   .bg-purple {
-    background-color: var(--bs-first-color-macber) !important;
+    background-color: var(--bs-first-color-Techno) !important;
   }
   /* line 332, src/assets/scss/custom/_style.scss */
   .bg-primary-soft {
@@ -634,7 +634,7 @@
   
   /* line 485, src/assets/scss/custom/_style.scss */
   .text-purble {
-    color: var(--bs-first-color-macber) !important;
+    color: var(--bs-first-color-Techno) !important;
   }
 
   .text-primary {
@@ -814,8 +814,8 @@
 
   .btn-yellow {
     color: var(--bs-white);
-    background-color: var(--bs-second-color-macber);
-    border-color: var(--bs-second-color-macber);
+    background-color: var(--bs-second-color-Techno);
+    border-color: var(--bs-second-color-Techno);
     -webkit-box-shadow: 0 11px 18px -8px #fad62c;
             box-shadow: 0 11px 18px -8px #fad62c;
   }
@@ -862,15 +862,15 @@
   }
   .btn-purble {
     color: var(--bs-white);
-    background-color: var(--bs-first-color-macber);
-    border-color: var(--bs-first-color-macber);
+    background-color: var(--bs-first-color-Techno);
+    border-color: var(--bs-first-color-Techno);
     -webkit-box-shadow: none;
             box-shadow: none;
   }
   .btn-purble:hover {
     color: var(--bs-white);
-    background-color: var(--bs-second-color-macber);
-    border-color: var(--bs-second-color-macber);
+    background-color: var(--bs-second-color-Techno);
+    border-color: var(--bs-second-color-Techno);
     -webkit-box-shadow: none;
     box-shadow: none;
   }

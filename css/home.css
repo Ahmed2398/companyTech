@@ -18,6 +18,7 @@
 .cta-img {
     width: 35%;
     padding-top: 2rem;
+    right: 0;
 }
 .list-two-col li {
     -webkit-box-flex: 0;
@@ -85,11 +86,11 @@
     background-color: transparent;
 }
 .process-icon-2 .fa-solid:hover{
-    color: var(--bs-second-color-macber);
+    color: var(--bs-second-color-Techno);
     transform: scale(1.5) !important;
 }
 .icon-content .h6:hover{
-    color: var(--bs-first-color-macber) !important;
+    color: var(--bs-first-color-Techno) !important;
     cursor: pointer;
 }
 
@@ -106,10 +107,10 @@
 
 /*  Pricing Section */
 .package-names{
-    color: var(--bs-first-color-macber) !important;
+    color: var(--bs-first-color-Techno) !important;
 }
 .list-price-def .fa-circle{
-    color: var(--bs-first-color-macber) !important;
+    color: var(--bs-first-color-Techno) !important;
 }
 /* End Section */
 
